@@ -14,7 +14,7 @@ SMTPPassword = "superSecret1!" # the SMTP password
 ```
 
 The `addresses.txt` file should be a list of email addresses, with one per line. For example:
-```toml
+```
 caitlin@starlabs.com
 cisco@starlabs.com
 ralph@starlabs.com
