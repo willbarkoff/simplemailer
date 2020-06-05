@@ -50,5 +50,38 @@ Usage of simplemailer:
         The path to the template directory to use when sending (default "templates/")
 ```
 
+By default, SimpleMailer will send each email and continue sending each remaining email if it runs into an issue. If you want it to stop after an issue, you can use the ``--stopOnFail`` flag, for example:
+
+```
+$ simplemailer
+go run main.go
+An error occured sending to caitlin@starlabs.com: 550 Invalid sender eva@mccullochtech.com
+An error occured sending to cisco@starlabs.com: 550 Invalid sender eva@mccullochtech.com
+An error occured sending to ralph@starlabs.com: 550 Invalid sender eva@mccullochtech.com
+An error occured sending to iris@cccitizen.com: 550 Invalid sender eva@mccullochtech.com
+An error occured sending to thawne@starlabs.com: 550 Invalid sender eva@mccullochtech.com
+An error occured sending to joe_west@ccpd.centralcity.gov: 550 Invalid sender eva@mccullochtech.com
+An error occured sending to ceclile.horton@centralcity.gov: 550 Invalid sender eva@mccullochtech.com
+$ simplemailer --stopOnFail
+An error occured sending to caitlin@starlabs.com:
+panic: 550 Invalid sender eva@mccullochtech.com
+
+goroutine 1 [running]:
+main.main()
+        /Users/williambarkoff/go/src/github.com/willbarkoff/simplemailer/main.go:49 +0x975
+exit status 2
+```
+
+## Building from source
+1. Install go.
+2. Install dependencies (SimpleMailer uses [Go Modules](https://blog.golang.org/using-go-modules)):
+```shell
+$ go get
+```
+3. Run
+```shell
+$ go run main.go
+```
+
 ## Contributing
 Pull requests are welcome!
