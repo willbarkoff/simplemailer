@@ -1,5 +1,14 @@
 # SimpleMailer
 
+![Go version](https://img.shields.io/github/go-mod/go-version/willbarkoff/simplemailer?logo=go&style=flat-square)
+[![Latest release](https://img.shields.io/github/v/tag/willbarkoff/simplemailer?label=latest%20release&sort=semver&style=flat-square)](https://github.com/willbarkoff/autoscout/releases)
+[![License](https://img.shields.io/github/license/willbarkoff/simplemailer?style=flat-square)](./LICENSE.md)
+
+- [⬇️ **Download**](https://github.com/willbarkoff/simplemailer/releases) 
+- [🐛 **Report a bug**](https://github.com/willbarkoff/simplemailer/issues/new)
+
+---
+
 SimpleMailer is a program that is used to send emails with SMTP. To use it create a config.toml file, an addresses.txt file, and a templates/ directory.
 
 The `config.toml` file should have the following format:
