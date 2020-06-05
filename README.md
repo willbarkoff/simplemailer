@@ -1,7 +1,7 @@
 # SimpleMailer
 
 ![Go version](https://img.shields.io/github/go-mod/go-version/willbarkoff/simplemailer?logo=go&style=flat-square)
-[![Latest release](https://img.shields.io/github/v/tag/willbarkoff/simplemailer?label=latest%20release&sort=semver&style=flat-square)](https://github.com/willbarkoff/autoscout/releases)
+[![Latest release](https://img.shields.io/github/v/tag/willbarkoff/simplemailer?label=latest%20release&sort=semver&style=flat-square)](https://github.com/willbarkoff/simplemailer/releases)
 [![License](https://img.shields.io/github/license/willbarkoff/simplemailer?style=flat-square)](./LICENSE.md)
 
 - [⬇️ **Download**](https://github.com/willbarkoff/simplemailer/releases) 
